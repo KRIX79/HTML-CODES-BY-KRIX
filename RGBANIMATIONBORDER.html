@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOR ANIMATION BOX </title>
+   
+    <style>
+        @keyframes borderColorAnimation {
+            0% {
+              border-color: red; /* Start with red border */
+            }
+            25% {
+              border-color: blue; /* Transition to blue */
+            }
+            50% {
+              border-color: green; /* Transition to green */
+            }
+            75% {
+              border-color: yellow; /* Transition to yellow */
+            }
+            100% {
+              border-color: red; /* Return to red */
+            }
+          }
+
+        .color-animation-box{
+            width: 200px;
+            height: 200px;
+            border:20px solid red;
+            border-radius: 40px;
+            animation: borderColorAnimation 4s linear infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            font-weight: bolder;
+            color: blueviolet;
+            background-color: rgb(95, 230, 230);
+            
+            
+           
+            
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgb(24, 29, 29);
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="color-animation-box">KRIX </div>
+</body>
+</html>
