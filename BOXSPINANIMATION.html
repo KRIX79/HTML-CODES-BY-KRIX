@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning Box</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffc0f8;
+            
+        }
+
+        .spinning-box {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            border-radius: 40px;
+            justify-content: center;
+            align-items: center;
+            background-color: #a5d0ee;
+            animation-name: spin;
+            animation-duration: 4s;
+            animation-iteration-count: 1;           
+        }
+        
+
+        @keyframes spin {
+            50%{
+              scale: 3;
+            }
+            
+            from {
+                
+                transform: rotate(0);
+                border-radius: 70;
+            }
+            50% {
+                scale: 3;
+            }
+            to {
+                transform: rotate(360deg);
+                border-radius: 100%;
+               
+            }
+            
+            
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="spinning-box">HELLO CHUTKKI!</div>
+</body>
+</html>
